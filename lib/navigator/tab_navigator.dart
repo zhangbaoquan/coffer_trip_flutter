@@ -35,6 +35,7 @@ class _TabNavigatorState extends State<TabNavigator> {
     return Scaffold(
       body: PageView(
         controller: _controller,
+        physics: const NeverScrollableScrollPhysics(),// 禁止滑动
         children: const [
           // 声明要显示的页面
           HomePage(),
