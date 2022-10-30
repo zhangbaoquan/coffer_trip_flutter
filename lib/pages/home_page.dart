@@ -48,6 +48,7 @@ class _HomePageState extends State<HomePage> {
         body: Stack(
       children: [
         MediaQuery.removePadding(
+          // 移除ListView 距离屏幕顶部的边距
           removeTop: true,
           context: context,
           child: NotificationListener(
